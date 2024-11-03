@@ -1,7 +1,21 @@
 {
-    "configs":{
+    "life":{
         "name": "SkyrimSE.exe",
-        "endereco": "031EA628",
-        "offsets": [90,90,28]
-    }
+        "endereco": "020F8818",
+        "offsets": [30,150,54]
+    },
+
+    "mana":{
+        "name": "SkyrimSE.exe",
+        "endereco": "020F8818",
+        "offsets": [30,150,58]
+    },
+
+    "stamina":{
+        "name": "SkyrimSE.exe",
+        "endereco": "020F8818",
+        "offsets": [30,150,"5C"]
+    },
+
+    "localPlayer":"SkyrimSE.exe+020F8818"
 }
