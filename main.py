@@ -11,7 +11,7 @@ with __builtins__.open("settings.json","r") as arquivo:
     endereco = int(data["life"]["endereco"],16)
 
     # criando um list comprehension para a conversão de todos as offsets para hexadecimal
-    offsets = [int(f"0x{offset}", 16) for offset in data["life"]["offsets"]]
+    offsets = [int(f"0x{offset}", 16) for offset in data["stamina"]["offsets"]]
 
 
 pm = Pymem("SkyrimSE.exe")
@@ -26,6 +26,6 @@ def getPointer(base, offsets):
     addr += offsets[-1]
     return addr
 
-while True:
-    pm.write_float(getPointer(module + endereco, offsets),1000.0)
-    print("Injetado")
+
+pm.write_float(getPointer(module + endereco, offsets),999999999.0)
+print("Injetado")
